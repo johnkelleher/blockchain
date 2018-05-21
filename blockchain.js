@@ -11,7 +11,22 @@ class Blockchain {
 
         return block;
     }
-}
 
+    isValidChain(chain) {
+        if(JSON.stringify(chain[0]) !== JSON.stringify(Block.genesis())) return false;
+
+        for (let i=1; i<chain.length; i++) {
+            const block = chain[i];
+            const lasBlock = chain[i-1];
+
+            if (block.lastHash !== lasBlock.hash ||
+                block.hash !== Block.blockHash(block)) {
+                return false;
+            }
+        }
+
+        return true;
+    }
+}
 
 module.exports = Blockchain;
