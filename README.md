@@ -33,7 +33,7 @@ A wallet consist of the following attributes
 
 | Attribute | Description |
 |---|---|
-| balance | a unique id for the transaction |
+| balance | wallets balance amount |
 | keyPair | |
 | publicKey | wallets public key and address|
 
