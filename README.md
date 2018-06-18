@@ -41,14 +41,14 @@ A wallet consist of the following attributes
 
 The proof of work used is based on [hashcash](https://en.wikipedia.org/wiki/Hashcash)
 
-The `difficulty` is the number of leading zeros the `hash` just have inorder for that block to be successfully mined.
+The `difficulty` is the number of leading zeros the `hash` just have in order for that block to be successfully mined.
 
 The `nonce` starts at 0 and is incremented by 1 until a `hash` with the same number of leading zero as the `difficulty` attribute is generated.
 
 
 ### Dynamic difficult
 
-The system will automatically adjusts the `difficulty` as more miners are added to the blockchain.
+The system will automatically adjust the `difficulty` as more miners are added to the blockchain.
 
 The `difficulty` is changed based on the time taking to mine the previous block. If the time exceeds the block mining rate, the `difficulty` is decreased.
 
