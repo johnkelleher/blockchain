@@ -50,10 +50,8 @@ The `nonce` starts at 0 and is incremented by 1 until a `hash` with the same num
 
 The system will automatically adjust the `difficulty` as more miners are added to the blockchain.
 
-The `difficulty` is changed based on the time taking to mine the previous block. If the time exceeds the block mining rate, the `difficulty` is decreased.
+The `difficulty` is changed based on the time taking to mine the previous block. If the time exceeds the block mining rate, the `difficulty` is decreased and increased accordingly.
 
-The block mining rate is controlled by a constant defined in config.js,
- 
-`MINE_RATE` represents the millisecond rate that blocks should be mined.
+The block mining rate is controlled by a constant defined in config.js, `MINE_RATE` represents the millisecond rate that blocks should be mined.
 
 
